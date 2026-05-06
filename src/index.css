@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 150 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 15%;
+
+    --primary: 140 60% 22%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-light: 140 45% 35%;
+    --primary-dark: 140 70% 14%;
+
+    --secondary: 80 40% 94%;
+    --secondary-foreground: 140 60% 22%;
+
+    --muted: 80 20% 95%;
+    --muted-foreground: 150 5% 45%;
+
+    --accent: 35 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 140 15% 85%;
+    --input: 140 15% 85%;
+    --ring: 140 60% 22%;
+
+    --radius: 0.5rem;
+
+    --hero-overlay: linear-gradient(135deg, hsla(140, 60%, 15%, 0.85), hsla(140, 40%, 20%, 0.7));
+    --section-gradient: linear-gradient(180deg, hsl(80, 40%, 96%) 0%, hsl(0, 0%, 100%) 100%);
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: var(--hero-overlay);
+  }
+  .section-gradient {
+    background: var(--section-gradient);
+  }
+  .text-shadow {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  }
+}
