@@ -30,6 +30,11 @@ const Contact = () => {
 
                 <li className="flex items-start gap-3">
                   <Mail size={18} className="mt-1 text-accent" />
+                  <span>sajjadricemills411@gmail.com</span>
+                </li>
+
+                <li className="flex items-start gap-3">
+                  <Mail size={18} className="mt-1 text-accent" />
                   <span>info@sajjadricemills.com</span>
                 </li>
 
