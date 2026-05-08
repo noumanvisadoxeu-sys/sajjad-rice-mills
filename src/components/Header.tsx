@@ -1,13 +1,13 @@
 import logo from "@/assets/srm-logo.png";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const navLinks = [
   { label: "Home", to: "/#home" },
-  { label: "About", to: "/#about" },
-  { label: "Products", to: "/#products" },
+  { label: "About", to: "/about" },
+  { label: "Products", to: "/products" },
   { label: "Recipes", to: "/recipes" },
   { label: "Contact", to: "/contact" },
 ];
@@ -15,6 +15,8 @@ const navLinks = [
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/" || location.pathname === "/home";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,9 +30,11 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-black/40 backdrop-blur-md border-b border-white/10 shadow-lg"
-          : "bg-transparent"
+        isHomePage
+          ? scrolled
+            ? "bg-black/40 backdrop-blur-md border-b border-white/10 shadow-lg"
+            : "bg-transparent"
+          : "bg-black/40 backdrop-blur-md border-b border-white/10 shadow-lg"
       }`}
     >
       <div className="container flex items-center justify-between py-4 px-6 md:px-10">
@@ -60,7 +64,7 @@ const Header = () => {
 
           <Link
             to="/contact"
-            className="ml-4 bg-cta text-white px-5 py-2 rounded-md text-md font-semibold hover:bg-cta/90 transition"
+            className="ml-4 bg-cta bg-[#d4a017] hover:bg-[#b98a25] text-black px-6 py-3 rounded-md text-md font-semibold hover:bg-cta/90 transition"
           >
             Get Quote
           </Link>

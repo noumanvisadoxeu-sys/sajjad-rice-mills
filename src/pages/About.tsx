@@ -1,16 +1,16 @@
-import RecipesSection from "@/components/RecipesSection";
+import AboutSection from "@/components/AboutSection";
 import MainLayout from "@/layout/MainLayout";
 import Padding from "@/layout/PaddingForSeparatePage";
 
-const Recipes = () => {
+const About = () => {
   return (
     <>
       <MainLayout>
         <Padding />
-        <RecipesSection />
+        <AboutSection />
       </MainLayout>
     </>
   );
 };
 
-export default Recipes;
+export default About;

@@ -4,8 +4,8 @@ import { HashLink } from "react-router-hash-link";
 
 const links = [
   { label: "Home", to: "/#home" },
-  { label: "About", to: "/#about" },
-  { label: "Products", to: "/#products" },
+  { label: "About", to: "/about" },
+  { label: "Products", to: "/products" },
   { label: "Recipes", to: "/recipes" },
   { label: "Contact", to: "/contact" },
 ];
@@ -72,15 +72,7 @@ const Footer = () => (
                 sajjadricemills411@gmail.com
               </a>
             </li>
-            <li className="flex items-start gap-3">
-              <Mail size={18} className="mt-0.5 shrink-0 text-accent" />
-              <a
-                href="mailto:info@sajjadricemills.com"
-                className="text-primary-foreground/70 hover:text-primary-foreground transition-colors"
-              >
-                info@sajjadricemills.com
-              </a>
-            </li>
+            <li className="flex items-start gap-3"></li>
           </ul>
         </div>
       </div>

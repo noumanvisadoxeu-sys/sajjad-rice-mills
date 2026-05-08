@@ -1,13 +1,16 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import ProductsSection from "@/components/ProductsSection";
+import MainLayout from "@/layout/MainLayout";
+import Padding from "@/layout/PaddingForSeparatePage";
 
 const Products = () => {
   return (
     <>
-      <Header />
-      <ProductsSection />
-      <Footer />
+      <MainLayout className="bg-primary-bgcolor">
+        <Padding />
+        <ProductsSection />
+      </MainLayout>
     </>
   );
 };
+
+export default Products;

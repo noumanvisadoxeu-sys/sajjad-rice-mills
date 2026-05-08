@@ -1,7 +1,7 @@
 const HeroSection = () => (
   <section
     id="home"
-    className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-24"
+    className="relative min-h-screen flex items-center justify-center overflow-hidden scroll-mt-24 pt-20 md:pt-32"
   >
     <video
       autoPlay
