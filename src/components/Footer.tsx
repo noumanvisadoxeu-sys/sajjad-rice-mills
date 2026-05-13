@@ -2,6 +2,14 @@ import logo from "@/assets/srm-logo.png";
 import { Mail, Phone } from "lucide-react";
 import { HashLink } from "react-router-hash-link";
 
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 const links = [
   { label: "Home", to: "/#home" },
   { label: "About", to: "/about" },
@@ -31,7 +39,57 @@ const Footer = () => (
             Punjab, Pakistan. Quality you can trust, taste you will love.
           </p>
         </div>
+        <div className="flex items-center gap-4 mt-6">
+          {/* Facebook */}
+          <a
+            href="https://facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white/10 hover:bg-[#d4a017] text-white hover:text-black flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            <FaFacebookF size={16} />
+          </a>
 
+          {/* Instagram */}
+          <a
+            href="https://instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white/10 hover:bg-[#d4a017] text-white hover:text-black flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            <FaInstagram size={16} />
+          </a>
+
+          {/* Twitter */}
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white/10 hover:bg-[#d4a017] text-white hover:text-black flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            <FaTwitter size={16} />
+          </a>
+
+          {/* TikTok */}
+          <a
+            href="https://tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white/10 hover:bg-[#d4a017] text-white hover:text-black flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            <FaTiktok size={16} />
+          </a>
+
+          {/* WhatsApp */}
+          <a
+            href="https://wa.me/923001234567"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-10 w-10 rounded-full bg-white/10 hover:bg-[#d4a017] text-white hover:text-black flex items-center justify-center transition-all duration-300 hover:scale-110"
+          >
+            <FaWhatsapp size={16} />
+          </a>
+        </div>
         {/* Quick Links */}
         <div>
           <h4 className="font-display text-lg font-bold mb-4">Quick Links</h4>
@@ -76,8 +134,6 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-
-      {/* Map embed */}
     </div>
 
     {/* Bottom bar */}
