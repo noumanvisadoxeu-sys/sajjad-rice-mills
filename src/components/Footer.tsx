@@ -13,9 +13,9 @@ import {
 } from "react-icons/fa";
 
 const links = [
-  { label: "Home", to: "/#home" },
-  { label: "About", to: "/#about" },
-  { label: "Products", to: "/#products" },
+  { label: "Home", to: "/home" },
+  { label: "About", to: "/about" },
+  { label: "Products", to: "/products" },
   { label: "Recipes", to: "/recipes" },
   { label: "Contact", to: "/contact" },
 ];
