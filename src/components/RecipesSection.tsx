@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
-import biryani from "@/assets/recipe-biryani.jpg";
-import friedRice from "@/assets/recipe-friedrice.jpg";
-import kheer from "@/assets/recipe-kheer.jpg";
-import pulao from "@/assets/recipe-pulao.jpg";
-import zarda from "@/assets/recipe-zarda.jpg";
+import biryani from "@/assets/recipe-biryani.webp";
+import friedRice from "@/assets/recipe-friedrice.webp";
+import kheer from "@/assets/recipe-kheer.webp";
+import pulao from "@/assets/recipe-pulao.webp";
+import zarda from "@/assets/recipe-zarda.webp";
 
 /* ADD NEW IMAGES */
-import beefBiryani from "@/assets/recipe-beef-biryani.png";
-import kabuliPulao from "@/assets/recipe-kabuli-pulao.png";
-import sindhiBiryani from "@/assets/recipe-sindhi-biryani.png";
-import vegFriedRice from "@/assets/recipe-veg-fried-rice.png";
-import yakhniPulao from "@/assets/recipe-yakhni-pulao.png";
+import beefBiryani from "@/assets/recipe-beef-biryani.webp";
+import kabuliPulao from "@/assets/recipe-kabuli-pulao.webp";
+import sindhiBiryani from "@/assets/recipe-sindhi-biryani.webp";
+import vegFriedRice from "@/assets/recipe-veg-fried-rice.webp";
+import yakhniPulao from "@/assets/recipe-yakhni-pulao.webp";
 
 const recipes = [
   {

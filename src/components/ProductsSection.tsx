@@ -1,18 +1,18 @@
 import { motion } from "framer-motion";
 
-import extra1121 from "@/assets/product-1121.jpg";
-import brown from "@/assets/product-brown.jpg";
-import sella from "@/assets/product-sella.jpg";
-import steam from "@/assets/product-steam.jpg";
-import superBasmati from "@/assets/product-super-basmati.jpg";
+import extra1121 from "@/assets/product-1121.webp";
+import brown from "@/assets/product-brown.webp";
+import sella from "@/assets/product-sella.webp";
+import steam from "@/assets/product-steam.webp";
+import superBasmati from "@/assets/product-super-basmati.webp";
 
 /* ADD YOUR OTHER IMAGES */
-import img6 from "@/assets/img-pk-386.png";
-import img11 from "@/assets/product-chef-basmati.png";
-import img8 from "@/assets/product-golden-sella-rice.png";
-import img7 from "@/assets/product-irri-6.png";
-import img10 from "@/assets/product-oraganic-basmati.png";
-import img9 from "@/assets/product-white-rice.png";
+import img6 from "@/assets/img-pk-386.webp";
+import img11 from "@/assets/product-chef-basmati.webp";
+import img8 from "@/assets/product-golden-sella-rice.webp";
+import img7 from "@/assets/product-irri-6.webp";
+import img10 from "@/assets/product-oraganic-basmati.webp";
+import img9 from "@/assets/product-white-rice.webp";
 
 const products = [
   {
